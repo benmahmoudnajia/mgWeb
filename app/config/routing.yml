@@ -1,0 +1,26 @@
+user:
+    type:     rest
+    resource: AppBundle\Controller\UserController
+
+product:
+    type:     rest
+    resource: AppBundle\Controller\ProductController
+
+promotion:
+    type:     rest
+    resource: AppBundle\Controller\PromotionController
+    
+categorie:
+    type:     rest
+    resource: AppBundle\Controller\CategorieController
+ 
+recipe:
+    type:     rest
+    resource: AppBundle\Controller\RecipeController
+card:
+    type:     rest
+    resource: AppBundle\Controller\CardController
+    
+
+api_login_check:
+    path: /api/login_check
