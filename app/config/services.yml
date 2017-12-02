@@ -1,0 +1,17 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    app.serializer.product:
+        class: AppBundle\Serializer\PictureSerializer
+        arguments: [%route_picture_path%]
+        tags:
+            - { name: jms_serializer.event_subscriber }
+            
+    app.serializer.recipe:
+        class: AppBundle\Serializer\RecipePictureSeralizer
+        arguments: [%route_picture_path_recipe%]
+        tags:
+            - { name: jms_serializer.event_subscriber }

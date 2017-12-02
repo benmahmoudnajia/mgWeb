@@ -1,0 +1,21 @@
+AppBundle\Entity\Product:
+    exclusion_policy: ALL
+    properties:
+        label:
+            expose: true
+            type: string
+        price:
+            expose: true
+            type: float
+        description:
+            expose: true
+            type: string
+        barCode:
+            expose: true
+            type: string
+        guarantee:
+            expose: true
+            type: string
+        picture:
+            expose: true
+            type: string
